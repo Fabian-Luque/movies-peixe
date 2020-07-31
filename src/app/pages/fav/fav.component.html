@@ -1,0 +1,20 @@
+<div class="card bg-dark">
+    <div class="bar container">
+        <h1 class="display-5 text-light">Mis Favoritos</h1>
+    </div>
+
+    <div class="results">
+
+        <div class="row m-1" *ngIf="favs.length">
+            <div class="col-3" *ngFor="let movie of favs">
+                <card-movie [movie]="movie" [fav]="true" (delete)="ngOnInit()"></card-movie>
+            </div>
+        </div>
+
+    </div>
+    <div class="not-found container" *ngIf="!favs.length">
+        <strong class="display-5 text-light">Por el momento no tienes favoritos, busca peliculas y agrega las peliculas que mas te gusten!</strong>
+
+        
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="card bg-dark" *ngIf="results">
+    <div class="bar container">
+        <h1 class="display-5 text-light">Busqueda: {{searchText}}</h1>
+    </div>
+
+    <div class="results">
+
+        <div class="row m-1" *ngIf="results.length">
+            <div class="col-3" *ngFor="let movie of results">
+                <card-movie [movie]="movie" (delete)="null"></card-movie>
+            </div>
+        </div>
+
+        <pagination *ngIf="totalResults" [totalPages]="totalResults" [currentPage]="currentPage"></pagination>
+
+    </div>
+    <div class="not-found" *ngIf="!results.length">
+        
+    </div>
+</div>
+
+<div class="card bg-dark" *ngIf="!results">
+    <div class="bar container">
+        <h1 class="display-5 text-light">No hay peliculas con el nombre : {{searchText}} =(</h1>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="row d-flex justify-content-center mb-5">
+    <div col-4>
+        <button class="btn btn-primary mr-5" (click)="back()">ATRAS</button>
+    </div>
+    <div col-4>
+        <strong class="text-light">PAGINA {{currentPage}} DE {{pages}}</strong> 
+        <strong class="text-light d-block">RESULTADOS: {{totalPages}}</strong> 
+    </div>
+    <div col-4>
+        <button class="btn btn-primary ml-5" (click)="next()">SIGUIENTE</button>
+    </div>
+</div>

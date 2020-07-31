@@ -1,0 +1,12 @@
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header">
+        {{movie.Title}}
+    </div>
+    <img [src]="movie.Poster" class="card-img-top" width="190" height="260" alt="...">
+    <div class="card-body">
+        <fa-icon [icon]="faHeart" [style.color]="fav ? 'red' : 'white'" style="color: red;" (click)="addFav(fav)"></fa-icon>
+        <strong class="card-title ml-2 card-text">Año : {{movie.Year}}</strong>
+        <!-- <strong class="card-title ml-2">{{movie.Title}}</strong> -->
+        <a [routerLink]="['/details/', movie.imdbID]" class="btn btn-info mt-2 d-block" >Ver más...</a>
+    </div>
+</div>

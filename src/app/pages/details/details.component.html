@@ -1,0 +1,36 @@
+<div class="card bg-dark" *ngIf="movie">
+    <div class="bar container">
+        <h1 class="display-5 text-light">{{movie.Title}}</h1>
+        <ngb-rating [(rate)]="movie.imdbRating" class="text-light rating"></ngb-rating>
+
+    </div>
+
+    <div class="row p-3">
+        <div class="col-4">
+            <div class="">
+                <img [src]="movie.Poster" class="w-100" height="400" alt="">
+                <ul class="list-group list-group-flush" >
+                    <li class="list-group-item"><strong>Estreno :</strong> {{movie.Released}}</li>
+                    <li class="list-group-item"><strong>Paises :</strong> {{movie.Country}}</li>
+                    <li class="list-group-item"><strong>Idioma :</strong> {{movie.Language}}</li>
+                    <li class="list-group-item"><strong>Genero :</strong> {{movie.Genre}}</li>
+                    <li class="list-group-item"><strong>Director :</strong> {{movie.Director}}</li>
+                    <li class="list-group-item"><strong>Duración :</strong> {{movie.Runtime}}</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-8">
+            <strong class="text-light">TRAMA</strong>
+            <p class="text-light">{{movie.Plot}}</p>
+            
+        </div>
+    </div>
+
+</div>
+<div class="card bg-dark" *ngIf="!movie">
+    <div class="bar container">
+        <h1 class="display-5 text-light">Pelicula no encontrada =(</h1>
+
+    </div>
+</div>
