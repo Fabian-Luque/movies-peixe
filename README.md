@@ -10,8 +10,8 @@
 
 * Clonar proyecto 
 * cd Project_name
-* ```npm install```
 * Editar .env con la key para usar **endpoint de http://omdbapi.com/** 
+* ```npm install```
 * ```ng serve -o```
 
 # Instrucciones instalación proyecto con **docker**
@@ -26,6 +26,7 @@
 
 * Clonar proyecto 
 * cd Project_name
+* Editar .env con la key para usar **endpoint de http://omdbapi.com/** 
 * ```docker build -t peixe:prod .```
 * Esperar un momento, docker esta ejecutando tareas
 * ```docker run -p 80:80 peixe:prod```
