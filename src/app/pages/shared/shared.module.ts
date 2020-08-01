@@ -7,15 +7,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardMovieComponent } from './card-movie/card-movie.component';
 import { PaginationComponent } from './pagination/pagination.component';
 
-import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [CardMovieComponent, PaginationComponent],
   imports: [
     CommonModule,
     FontAwesomeModule,
-    RouterModule,
-    NgxPaginationModule
+    RouterModule
   ],
   exports:[
     CardMovieComponent,

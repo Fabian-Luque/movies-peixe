@@ -9,7 +9,6 @@ import { DetailsComponent } from './details/details.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [ FavComponent, SearchComponent, DetailsComponent],
@@ -18,7 +17,6 @@ import { NgxPaginationModule } from 'ngx-pagination';
     PagesRoutingModule,
     SharedModule,
     NgbModule,
-    NgxPaginationModule
   ],
 })
 export class PagesModule { }
