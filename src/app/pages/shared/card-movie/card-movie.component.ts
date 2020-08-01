@@ -16,7 +16,7 @@ export class CardMovieComponent {
   constructor() { }
 
 
-  addFav(status) {
+  addFav() {
     this.fav =! this.fav;
     if (this.fav) {
       // Agrega al local storage

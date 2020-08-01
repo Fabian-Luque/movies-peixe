@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  api: 'http://omdbapi.com/',
+  api: 'https://omdbapi.com/',
   token: '996d5886'
 };

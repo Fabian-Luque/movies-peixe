@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://omdbapi.com/',
+  api: 'https://omdbapi.com/',
   token: '996d5886'
 };
 
