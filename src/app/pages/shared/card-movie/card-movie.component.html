@@ -6,7 +6,6 @@
     <div class="card-body">
         <fa-icon [icon]="faHeart" [style.color]="fav ? 'red' : 'white'" style="color: red;" (click)="addFav(fav)"></fa-icon>
         <strong class="card-title ml-2 card-text">Año : {{movie.Year}}</strong>
-        <!-- <strong class="card-title ml-2">{{movie.Title}}</strong> -->
         <a [routerLink]="['/details/', movie.imdbID]" class="btn btn-info mt-2 d-block" >Ver más...</a>
     </div>
 </div>

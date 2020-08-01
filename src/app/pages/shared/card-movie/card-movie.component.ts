@@ -30,14 +30,14 @@ export class CardMovieComponent {
 
   addToLocalStorage(movie) {
     let favs = JSON.parse(localStorage.getItem('favs'));
-    let found = favs.find((m) => m.imdbID === movie.imdbID );
-    if (found) {
-      return;
-    }
+    if (favs) {
+      // si tengo peliculas y ademas encuentro la pelicula en mi local storage termino la funcion
+      let found = favs.find((m) => m.imdbID === movie.imdbID );
+      if (found) return;
+    } 
     favs = favs ? [...favs, movie] : favs = [movie];
     localStorage.setItem('favs', JSON.stringify(favs));
-    console.log(favs);
-    
+
   }
   deleteToLocalStorage(movie) {
     let favs = JSON.parse(localStorage.getItem('favs'));
