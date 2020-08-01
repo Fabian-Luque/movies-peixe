@@ -12,7 +12,7 @@
 * cd Project_name
 * ```npm install```
 * Editar .env con la key para usar **endpoint de http://omdbapi.com/** 
-* ```ng serve -o``
+* ```ng serve -o```
 
 # Instrucciones instalación proyecto con **docker**
 
