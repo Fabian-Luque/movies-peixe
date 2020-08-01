@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'fav', component: FavComponent},
   { path: 'search/:search', component: SearchComponent},
   { path: '', redirectTo: '/fav', pathMatch: 'full'},
-//   { path: '**',component: PageNotFoundComponent},
+  { path: '**',component: FavComponent},
 ];
 
 @NgModule({
